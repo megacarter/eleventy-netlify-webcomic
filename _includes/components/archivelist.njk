@@ -1,0 +1,10 @@
+<section>
+	{% for post in postslist | reverse %}
+    <div>
+      <a href="{{post.url}}">
+        <img src="{{post.data.comicPageUrl}}"/>
+        <p>{{post.data.title}}</p>
+      </a>
+    </div>
+	{% endfor %}
+</section>

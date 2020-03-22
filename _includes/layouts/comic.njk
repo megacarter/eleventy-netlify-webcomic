@@ -3,40 +3,6 @@ layout: layouts/base.njk
 section: post
 ---
 
-<article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
-    </small>
-  </p>
-
-  {{ layoutContent | safe }}
-
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
-
-
-  <nav aria-labelledby="my-pagination">
-    <h2 id="my-pagination">Webcomic Navigation</h2>
-    <ul>
-      <li>{% if page.url != firstPost.url %}<a href="{{ firstPost.url }}">First</a>{% else %}First{% endif %}</li>
-
-      <li>{% if prevPost.url %}<a href="{{ prevPost.url }}">Previous</a>{% else %}Previous{% endif %}</li>
-
-      <li>{% if nextPost.url %}<a href="{{ nextPost.url }}">Next</a>{% else %}Next{% endif %}</li>
-
-      <li>{% if page.url != lastPost.url %}<a href="{{ lastPost.url }}">Last</a>{% else %}Last{% endif %}</li>
-    </ul>
-  </nav>
-</article>
+{% include "components/comicPage.njk" %}
 
 

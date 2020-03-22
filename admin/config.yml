@@ -37,3 +37,13 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: Comic Page
+    label: webcomic
+    folder: comics
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Comic Page, name: comicPageUrl, widget: image }      
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

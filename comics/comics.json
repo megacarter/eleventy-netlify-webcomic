@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/comic.njk",
+  "permalink": "/comic/{{ title | slug }}/index.html",
+  "tags": [
+    "comic"
+  ]
+}

@@ -10,6 +10,24 @@ module.exports = function(eleventyConfig) {
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+  eleventyConfig.addCollection("webcomic", function(collection) {
+    const coll = collection.getFilteredByTag("comic");
+  
+    for(let i = 0; i < coll.length ; i++) {
+      const firstPost = coll[0];
+      const lastPost = coll.slice(-1)[0];
+      const prevPost = coll[i-1];
+      const nextPost = coll[i + 1];
+  
+      coll[i].data["prevPost"] = prevPost;
+      coll[i].data["nextPost"] = nextPost;
+      coll[i].data["firstPost"] = firstPost;
+      coll[i].data["lastPost"] = lastPost;
+    }
+  
+    return coll;
+  });
+
   // Configuration API: use eleventyConfig.addLayoutAlias(from, to) to add
   // layout aliases! Say you have a bunch of existing content using
   // layout: post. If you don’t want to rewrite all of those values, just map

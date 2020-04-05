@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+section: blog
+permalink: /blog/index.html
+---
+<h1>{{ title }}</h1>
+
+{{ layoutContent | safe }}
+
+{% for character in characters %}
+  <img src="{{character.characterImage}}"/>
+  <h3>{{character.characterName}}</h3>
+  {{character.characterDescription}}
+{% endfor %}

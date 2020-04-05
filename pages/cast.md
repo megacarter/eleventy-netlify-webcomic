@@ -1,13 +1,14 @@
 ---
 title: Cast
+layout: layouts/cast.njk
 date: 2017-01-01T00:00:00.000Z
 permalink: /cast/index.html
 eleventyNavigation:
   key: Cast
   order: 6
-character:
+characters:
   - characterImage: /static/img/logo.png
-    chracterName: Sheila
+    characterName: Sheila
     characterDescription: Sheila is whatever she wants to be
 ---
 ##### Intro on a cast page

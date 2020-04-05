@@ -45,7 +45,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: Comic Page, name: comicPageUrl, widget: image }
-      - { label: Comic Alt Text/Transcription, name: comicalt, widget: markdown, hint: This is useful text for people who are visually impaired to follow along on your comic. <a href="https://lastcallmedia.com/blog/accessible-comics">Check out this post for some tips on how to write accessible transcripts</a> }   
+      - { label: Comic Alt Text/Transcription, name: comicalt, widget: markdown, hint: This is useful text for people who are visually impaired to follow your comic. Check out this post for some tips on how to write accessible transcripts https://lastcallmedia.com/blog/accessible-comics }   
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

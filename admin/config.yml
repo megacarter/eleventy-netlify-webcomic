@@ -37,6 +37,7 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
+  # Our Comic pages
   - name: Comic Page
     label: webcomic
     folder: comics
@@ -47,3 +48,19 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  # Our Cast Page
+  - name: Cast
+    label: cast
+    files:
+      - file: pages/cast.md
+        label: Cast Page
+        name: castpage
+        fields:
+          - label: Character
+            name: character
+            widget: list
+            fields:
+              - { label: Intro Text, name: body, widget: markdown }
+              - {label: Character Image, name: characterImage, widget: image}
+              - {label: Character Name, name: chracterName, widget: string}
+              - { label: Character Description, name: characterDescription, widget: markdown }

@@ -1,8 +1,16 @@
-:root {
-  --turkey: #FFF0EB;
-  --white: white;
-  --blue: blue; }
-
+@charset "UTF-8";
+/*
+    media queries based on Pure CSS's breakpoints: https://purecss.io/grids/
+    usage example:
+    @include sm {
+      width: 100%;
+    }
+*/
+/* ≥ 336px */
+/* ≥ 568px */
+/* ≥ 768px */
+/* ≥ 1024px */
+/* ≥ 1200px */
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -16,7 +24,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--turkey); }
+  background-color: #FFF0EB; }
 
 main {
   max-width: 37.5em; }
@@ -28,7 +36,7 @@ code {
 
 a[href],
 a[href]:visited {
-  color: var(--blue); }
+  color: blue; }
 
 a[href]:not(:hover) {
   text-decoration: none; }
@@ -93,7 +101,7 @@ article {
   margin-bottom: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid #eee;
-  border-bottom: 1px solid var(--white); }
+  border-bottom: 1px solid white; }
 
 main > section > article > * {
   margin-top: 0;
@@ -110,17 +118,17 @@ a[rel="tag"]:visited {
   padding: 0 .5em;
   line-height: 2em;
   height: 2em;
-  border: 1px solid var(--white);
-  background-color: var(--white);
-  color: var(--blue);
+  border: 1px solid white;
+  background-color: white;
+  color: blue;
   border-radius: .25em;
   text-decoration: none;
   margin: 0 .5em .5em 0; }
 
 a[rel="tag"]:hover {
-  border: 1px solid var(--blue);
-  background-color: var(--blue);
-  color: var(--white); }
+  border: 1px solid blue;
+  background-color: blue;
+  color: white; }
 
 a[rel="tag"]:last-child {
   margin-right: 0; }
@@ -147,9 +155,9 @@ textarea {
   border: 1px solid black; }
 
 button {
-  border: 1px solid var(--blue);
-  background-color: var(--blue);
-  color: var(--white);
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
   cursor: pointer; }
 
 @media screen and (min-width: 768px) {

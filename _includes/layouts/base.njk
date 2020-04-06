@@ -3,7 +3,7 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body class="wrapper-body">
 
 		<header>
 			<em>
@@ -12,9 +12,12 @@
 			{% include "components/nav.njk" %}
 		</header>
 
-		<main>
-			{{ layoutContent | safe }}
-		</main>
+		<div class="wrapper-main">
+			<main>
+				{{ layoutContent | safe }}
+			</main>
+			{% include "components/social-media.njk" %}
+		</div>
 
 		{% include "components/footer.njk" %}
 

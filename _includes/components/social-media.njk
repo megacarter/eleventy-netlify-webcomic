@@ -1,0 +1,9 @@
+<aside>
+  {% for socialName, social in metadata.social %}
+    {% if social.link !== "" %}
+      <span>
+        <a href="{{social.link}}"><img src="{{social.icon}}" alt="{{socialName}}"/></a>
+      </span>
+    {% endif %}
+  {% endfor %}
+</aside>

@@ -5,8 +5,7 @@
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy",
-    "css": "node-sass scss/ -o static/css"
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",

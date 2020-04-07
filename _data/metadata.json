@@ -1,10 +1,17 @@
 {
   "title": "Webcomic Template",
+  "title_image": "",
   "url": "https://eleventy-netlify-boilerplate.netlify.com",
   "author": {
     "name": "Kate Drwęcka",
     "email": "katedrwecka@gmail.com",
     "github": "https://github.com/katedee"
+  },
+  "nav_button_images" : {
+    "first": "",
+    "previous": "",
+    "next": "",
+    "last": ""
   },
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",

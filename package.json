@@ -6,8 +6,7 @@
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy",
-    "css": "node-sass scss/ -o static/css",
-    "css:watch": "npm run css && node-sass scss/ -wo dist"
+    "css": "node-sass scss/ -o static/css"
   },
   "repository": {
     "type": "git",

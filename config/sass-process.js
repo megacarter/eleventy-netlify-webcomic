@@ -2,7 +2,7 @@ const sass = require('node-sass-promise');
 const fs = require('fs-extra');
 const path = require('path');
 
-const exportCss = () => {
+const exportCss = (scssPath, cssPath) => {
     //Render css from sass...
     sass.render({file: scssPath})
     //Then write result css string to cssPath file
@@ -27,9 +27,9 @@ module.exports = (scssPath, cssPath) => {
     //Only if running local dev
     if (process.env.NODE_ENV === 'localdev') {
         fs.watch(path.dirname(scssPath), () => {
-            exportCss();
+            exportCss(scssPath, cssPath);
         });
     } else {
-        exportCss();
+        exportCss(scssPath, cssPath);
     }
 }

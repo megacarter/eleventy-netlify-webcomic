@@ -7,8 +7,7 @@ const exportCss = (scssPath, cssPath) => {
     sass.render({file: scssPath})
     //Then write result css string to cssPath file
     .then(result => fs.writeFile(cssPath, result.css.toString()))
-    .catch(error => console.error(error))
-    console.log(`Watching ${path.dirname(scssPath)}...`);      
+    .catch(error => console.error(error))     
 }
 
 module.exports = (scssPath, cssPath) => {
@@ -28,6 +27,7 @@ module.exports = (scssPath, cssPath) => {
     if (process.env.NODE_ENV === 'localdev') {
         fs.watch(path.dirname(scssPath), () => {
             exportCss(scssPath, cssPath);
+            console.log(`Watching ${path.dirname(scssPath)}...`); 
         });
     } else {
         exportCss(scssPath, cssPath);

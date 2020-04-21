@@ -25,7 +25,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: red; }
+  background-color: #FFF0EB; }
 
 p,
 pre,
@@ -93,9 +93,13 @@ img {
       flex: 1; } }
 
 @media screen and (min-width: 35.5em) {
-  .wrapper-main aside {
+  aside.social {
     /* 12em is the width of the columns */
     flex: 0 0 12em; } }
+
+aside.social__icon {
+  width: 40px;
+  height: 40px; }
 
 /* .HolyGrail-nav {
   order: -1;
@@ -159,27 +163,16 @@ a[rel="tag"]:last-child {
   margin-right: 0; }
 
 /* Posts List */
-article {
+.blog-item {
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid #eee;
   border-bottom: 1px solid white; }
 
-main > section > article > * {
+article.blog-item > * {
   margin-top: 0;
   margin-bottom: .5em; }
 
 /* Posts List */
-article {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #eee;
-  border-bottom: 1px solid white; }
-
-main > section > article > * {
-  margin-top: 0;
-  margin-bottom: .5em; }
-
 .comic__write-up {
   background: white;
   padding: 1.5em;

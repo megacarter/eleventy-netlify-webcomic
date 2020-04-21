@@ -18,17 +18,22 @@ img {
 
   main {
     max-width: 75%;
-    
+
     @include sm {
       flex: 1;
     }
   }
+}
 
-  aside {
-    @include sm {
-    /* 12em is the width of the columns */
-      flex: 0 0 12em;
-    }
+aside.social {
+  @include sm {
+  /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
   }
 }
 

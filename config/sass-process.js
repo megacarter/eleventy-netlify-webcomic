@@ -23,10 +23,10 @@ module.exports = (scssPath, cssPath) => {
     }
     
     //Watch for changes to scssPath directory...
-    //Only if running local dev
-    if (process.env.NODE_ENV === 'localdev') {
+    //Only if running watch
+    if (process.argv.includes('scss-watch')) {
         fs.watch(path.dirname(scssPath), () => {
-            exportCss(scssPath, cssPath);
+            exportCss(scssPath, cssPath); 
             console.log(`Watching ${path.dirname(scssPath)}...`); 
         });
     } else {

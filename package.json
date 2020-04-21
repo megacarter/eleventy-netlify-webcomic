@@ -6,7 +6,7 @@
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy",
-    "dev": "npx eleventy --serve --watch NODE_ENV=localdev"
+    "dev": "NODE_ENV=localdev npx eleventy --serve --watch scss-watch"
   },
   "repository": {
     "type": "git",

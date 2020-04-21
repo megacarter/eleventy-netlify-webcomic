@@ -1,12 +1,11 @@
 /* Posts List */
-article {
+.blog-item {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
 	border-bottom: 1px solid $white;
 }
 
-main > section > article > * {
+article.blog-item > * {
 	margin-top: 0;
 	margin-bottom: .5em;
 }

@@ -56,7 +56,7 @@ module.exports = function(eleventyConfig) {
   });
 
   //Watching for modificaions in style directory
-  sass('./scss/styles.scss', './_includes/css/styles.css');
+  // sass('./scss/styles.scss', './_includes/css/styles.css');
 
   // Minify CSS
   eleventyConfig.addFilter("cssmin", function(code) {

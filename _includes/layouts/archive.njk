@@ -7,5 +7,5 @@ permalink: /archive/index.html
 
 {{ layoutContent | safe }}
 
-{% set postslist = collections.webcomic %}
+{% set postslist = collections.webcomic | reverse %}
 {% include "components/archivelist.njk" %}

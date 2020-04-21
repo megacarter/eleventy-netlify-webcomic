@@ -1,7 +1,7 @@
 ---
-title: I guess if you wanna give your comic pages long titles
+title: I guess if you wanna give your comic pages long titles like this one
 summary: Why contemplating our mortality can be a powerful catalyst for change
-date: 2017-01-01
+date: 2019-01-02
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

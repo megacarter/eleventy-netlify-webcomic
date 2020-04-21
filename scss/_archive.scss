@@ -1,12 +1,15 @@
-/* Posts List */
-// article {
-// 	margin-bottom: 1em;
-// 	padding-bottom: 1em;
-// 	border-bottom: 1px solid #eee;
-// 	border-bottom: 1px solid $white;
-// }
+.archive {
+	display: flex;
+  flex-wrap: wrap;
+	align-content: flex-start;
+}
 
-// main > section > article > * {
-// 	margin-top: 0;
-// 	margin-bottom: .5em;
-// }
+.archive__item {
+	width: 20%;
+	padding: $space-sm;
+	text-align: center;
+	
+	&-title {
+		font-size: 0.875rem
+	}
+}

@@ -1,23 +1,26 @@
-<article>
-  <div class="comic-container">
+<article class="comic">
+  <div class="comic__image">
     <img src="{{ comicPageUrl }}" />
   </div>
-  <nav aria-labelledby="my-pagination">
-    <h2 id="my-pagination">Webcomic Navigation</h2>
-    <ul>
-      <li>{% if page.url != firstPost.url %}<a href="{{ firstPost.url }}">First</a>{% else %}First{% endif %}</li>
+  <nav class="comic__nav-wrapper" aria-labelledby="comicNavTitle">
+    <h2 id="comicNavTitle">Webcomic Navigation</h2>
+    <ul class="comic-nav">
+      <li class="comic-nav__item comic-nav__item--first">{% if page.url != firstPost.url %}<a href="{{ firstPost.url }}">First</a>{% else %}First{% endif %}</li>
 
-      <li>{% if prevPost.url %}<a href="{{ prevPost.url }}">Previous</a>{% else %}Previous{% endif %}</li>
+      <li class="comic-nav__item comic-nav__item--prev">{% if prevPost.url %}<a href="{{ prevPost.url }}">Previous</a>{% else %}Previous{% endif %}</li>
 
-      <li>{% if nextPost.url %}<a href="{{ nextPost.url }}">Next</a>{% else %}Next{% endif %}</li>
+      <li class="comic-nav__item comic-nav__item--next">{% if nextPost.url %}<a href="{{ nextPost.url }}">Next</a>{% else %}Next{% endif %}</li>
 
-      <li>{% if (page.url != lastPost.url) and (page.url != '/') %}<a href="{{ lastPost.url }}">Last</a>{% else %}Last{% endif %}</li>
+      <li class="comic-nav__item comic-nav__item--last">{% if (page.url != lastPost.url) and (page.url != '/') %}<a href="{{ lastPost.url }}">Last</a>{% else %}Last{% endif %}</li>
     </ul>
   </nav>
-  <p>
-    <small>
-      Posted on <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
-    </small>
-  </p>
-  {{ layoutContent | safe }}
+  <div class="comic__write-up">
+    <p class="comic__date">
+      <small>
+        Posted on <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+      </small>
+    </p>
+    <h2>{{ comicTitle }}</h2>
+    {{ layoutContent | safe }}
+  </div>
 </article>

@@ -1,0 +1,27 @@
+.comic__write-up {
+  background: $post-background;
+  padding: 1.5em;
+  padding-bottom: 2em;
+  //TODO: remove border bottom (just getting a sense of where else I want it right now)
+}
+
+#comicNavTitle {
+  @include visuallyHidden();
+}
+
+.comic-nav {
+  padding: 0;
+  text-align: center;
+}
+
+.comic-nav__item {
+  list-style: none;
+  display: inline-block;
+  padding: 0.5em 1em;
+  &--first {}
+  &--prev {}
+  &--next {}
+  &--last {}
+
+}
+

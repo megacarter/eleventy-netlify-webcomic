@@ -1,0 +1,15 @@
+.character {
+	display: flex;
+    flex-wrap: wrap;
+	align-content: flex-start;
+    margin-top: $space-xl;
+}
+
+.character__image {
+    max-width: 200px;
+}
+
+.character__description {
+    padding-left: $space-lg;
+    padding-top: $space-md;
+}

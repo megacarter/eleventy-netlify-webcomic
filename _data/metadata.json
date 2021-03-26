@@ -14,6 +14,10 @@
     "id": "https://myurl.com/"
   },
   "social": {
+    "Website": { 
+      "link": "http://example.com/",
+      "icon": "/static/social-icons/website.svg"
+    },
     "Twitter": { 
       "link": "",
       "icon": "/static/social-icons/social-1_round-twitter.svg"

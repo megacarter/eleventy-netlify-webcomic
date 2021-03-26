@@ -8,7 +8,13 @@ permalink: /blog/index.html
 {{ layoutContent | safe }}
 
 {% for character in characters %}
-  <img src="{{character.characterImage}}"/>
-  <h3>{{character.characterName}}</h3>
-  {{character.characterDescription}}
+  <div class="character">
+    <div class="character__image">
+      <img src="{{character.characterImage}}"/>
+    </div>
+    <div class="character__description">
+      <h3>{{character.characterName}}</h3>
+      {{character.characterDescription}}
+    </div>
+  </div>
 {% endfor %}

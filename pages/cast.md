@@ -6,6 +6,7 @@ permalink: /cast/index.html
 eleventyNavigation:
   key: Cast
   order: 6
+  url: 
 characters:
   - characterImage: /static/img/logo.png
     characterName: Sheila

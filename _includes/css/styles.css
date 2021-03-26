@@ -197,6 +197,19 @@ a[rel="tag"]:last-child {
   .archive__item-title {
     font-size: 0.875rem; }
 
+.character {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 40px; }
+
+.character__image {
+  max-width: 200px; }
+
+.character__description {
+  padding-left: 30px;
+  padding-top: 20px; }
+
 .comic__write-up {
   background: white;
   padding: 1.5em;

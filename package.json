@@ -32,6 +32,7 @@
     "node-sass-promise": "^1.0.0"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^0.8.2",
     "@11ty/eleventy-navigation": "^0.1.6",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",

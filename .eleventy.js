@@ -103,6 +103,26 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("feed");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
+  const Image = require("@11ty/eleventy-img");
+
+  async function imageShortcode(src, alt) {
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+    }
+  
+    let metadata = await Image(src, {
+      widths: [200],
+      outputDir: "./static/img/thumbs/",
+      formats: ["jpeg"]
+    });
+  
+    let data = metadata.jpeg[metadata.jpeg.length - 1];
+    return `<img src="/${data.outputPath}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
+  }
+
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");

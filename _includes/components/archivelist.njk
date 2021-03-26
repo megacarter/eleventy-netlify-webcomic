@@ -2,7 +2,7 @@
 	{% for post in postslist | reverse %}
     <div class="archive__item">
       <a href="{{post.url}}" class="archive__item-link">
-        <img class="archive__item-image" src="{{post.data.comicPageUrl}}"/>
+        <img class="archive__item-image" src="{{post.data.comicPageUrl}}?nf_resize=fit&w=200&h=250"/>
         <small class="archive__item-number">{{loop.index}}</small>
         <h3 class="archive__item-title">{{post.data.title}}</h3>
       </a>

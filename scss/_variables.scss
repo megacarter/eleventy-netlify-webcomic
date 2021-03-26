@@ -10,22 +10,44 @@ $space-lg: 30px;
 $space-xl: 40px;
 $space-xxl: 60px;
 
+@mixin plain-background {
+    background: $turkey;
+}
+
+@mixin gradient-background {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+@mixin graph-background {
+    //you can copy and paste different patterns from here https://www.magicpattern.design/tools/css-backgrounds/
+    background-color: #e5e5f7;
+    opacity: 0.4;
+    background-image:  linear-gradient(#444cf7 2px, transparent 2px), linear-gradient(to right, #444cf7 2px, #e5e5f7 2px);
+    background-size: 40px 40px;
+}
+
 
 /* THEME COLOURS */
+
 // the background colour of the site (currently that peach-y colour)
-$background: $turkey;
+@mixin background {
+    @include graph-background;
+}
 
 // the background behind colour on the text/posts (currently white)
 $post-background: white;
 
 // the main colour you want the links to be
 $link: white;
+
 // the colour of the links when your mouse hovers over them
 $link-hover: white;
 
 // the colour you want the social icons to be
 $social-icon-color: blue;
 
+/* TAG COLOURS */
 // the colour of the TEXT of the tag (currently white)
 $tag-color-1: white;
 // the colour of the BACKGROUND of the tag

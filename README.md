@@ -1,47 +1,35 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
-
-# Eleventy Netlify Boilerplate
+# Webcomic Site Template (Instructions still on going)
 
 ## What is it?
 
-A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+A free webcomic template, with instructions on how to set it up (yes, you will have to touch some code, but I'm going to try and make this easy for you).
 
-Use it as a starter for your own JAMstack projects, or as an easy way to get started building websites with Eleventy.
+Built using the static site generator, [Eleventy](https://www.11ty.io/) and using [Netlify CMS](https://www.netlifycms.org/) for the web interface to upload. Hosted on [Netlify], making this site mostly free to maintain except for a domain.
 
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
+Use it as a starter for your own webcomic.
 
-🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
+Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo.
 
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com/)
+## [Demo Site](https://keen-newton-74c4ac.netlify.app/)
 
-## Features
+## Instructions
 
-* NEW: Now with [Eleventy v0.10.0](https://github.com/11ty/eleventy/releases/tag/v0.10.0) freshness! :doughnut:
-* NEW: Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
-* Sample pages and a blog with tag support
-* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* Includes a working contact form
-* CSS 2kb minified, inlined for fastest page render
-* Optional pipeline for minified inline JS
-* Pre-builds and minifies your HTML too
-* Uses Markdown files for content
-* Uses Nunjucks (or Liquid) templates for layout
-* 100% Javascript framework free
-* Continuous Deployment workflow via Netlify
+### Github account
+First thing's first. You're going to need a [Github account](https://github.com/). Github is a bit of a complicated thing to explain, but [here's an article if you want to delve into it](https://www.howtogeek.com/180167/htg-explains-what-is-github-and-what-do-geeks-use-it-for/). For **our purposes** Github is the place where we will be storing the code and files that will make up your webcomic site, and what we'll use to do some necessary edits for it in the beginning.
 
-## Want to try it out now?
+Github uses something called version control, which means as you make changes a history of older versions of the site is maintained. SO, if you feel like you've horribly messed up something, there's a way to hit that CTRL Z/undo button, so to speak.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Anyways, go create your account and then come back here.
+
+### Deploy the site!
+
+Hit this button:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/katedee/eleventy-netlify-webcomic&stack=cms)
 
 Clicking the button above will deploy a copy of the demo website to your Netlify
-account (you can create an account during this process if you don't have one)
-and everything needed for running the CMS:
-
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
-* Process form data with Netlify Forms
+account (you will also create an account during this process)
+and everything needed for running the site.
 
 ### Setup authentication
 

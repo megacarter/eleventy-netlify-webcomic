@@ -1,9 +1,15 @@
+.comic__image {
+  background: $post-background;
+  img {
+    margin: 0 auto;
+  }
+}
+
 .comic__write-up {
   background: $post-background;
   padding: 1.5em;
   padding-bottom: 2em;
   border-radius: .25em;
-  //TODO: remove border bottom (just getting a sense of where else I want it right now)
 }
 
 #comicNavTitle {

@@ -1,6 +1,8 @@
 ---
 title: Page One
 summary: Why contemplating our mortality can be a powerful catalyst for change
+comicPageUrl: /static/img/screen-shot-2021-03-29-at-4.18.59-pm.png
+comicalt: a comic page
 date: 2015-01-01
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

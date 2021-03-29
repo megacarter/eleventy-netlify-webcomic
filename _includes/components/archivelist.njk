@@ -2,7 +2,7 @@
 	{% for post in postslist | reverse %}
     <div class="archive__item">
       <a href="{{post.url}}" class="archive__item-link">
-        {% image "."+post.data.comicPageUrl, "photo of my cat" %}
+        {% if post.data.comicPageUrl %}{% image "."+post.data.comicPageUrl, "photo of my cat" %}{% endif %}
         <small class="archive__item-number">{{loop.index}}</small>
         <h3 class="archive__item-title">{{post.data.title}}</h3>
       </a>

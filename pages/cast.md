@@ -11,9 +11,6 @@ characters:
   - characterImage: /static/img/logo.png
     characterName: Sheila
     characterDescription: Sheila is whatever she wants to be
-  - characterImage: /static/img/logo.png
-    characterName: Martha
-    characterDescription: Martha is whatever she wants to be
 ---
 ##### Intro on a cast page
 

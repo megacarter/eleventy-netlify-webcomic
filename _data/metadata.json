@@ -1,14 +1,11 @@
 {
-  "title": "Webcomic Template",
-  "title_image": "",
-  "url": "https://eleventy-netlify-boilerplate.netlify.com",
+  "title": "Webcomic Name",
   "author": {
-    "name": "Kate Drwęcka",
-    "email": "katedrwecka@gmail.com",
-    "github": "https://github.com/katedee"
+    "name": "Your name here",
+    "email": "youremailhere@gmail.com"
   },
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "place a tagline for your comics here.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://myurl.com/"

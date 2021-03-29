@@ -48,6 +48,67 @@ list, and you should then be logged into your CMS. Cool huh?
 
 Now you're all set, and you can start editing content!
 
+### Update your site information
+Buckle up, we're going to touch some code, but hopefully it won't be too painful. Head to your github account. Click your icon in the top right, go to "your repositories", and then click on the repository for you webcomic site.
+
+Click on the folder called `_data`, and click the file name `metadata.json`.
+
+From here, hit the pencil/edit icon on the right.
+
+It's important here that you maintain the double quotes. Go ahead and update the title, author name and email.
+Then, under feed, update the subtitle with a tagline about your comic, and the ID with your website url (you can grab the one from netlify for now, and update later with a custom domain).
+
+Under `social` you can see a list of a couple social media websites, and a website link. Under these, update only the `link` portion, placing your link in between the quotation marks. IF you do not want a particular link to show, just leave it blank. Leave the RSS link, as this is automatically generated :)
+
+When you're done editing, make a quick sentence or two on what you updated in the commit decription field at the bottom of the page and hit "commit" (basically "publish")
+
+Congrats, you're a web developer now 😎
+
+### Adding content
+Okay, enough faffing about in the code. Let's head back to Netlify and over the admin portion of our website. If you have trouble finding it it's usually just your site url with `/admin` added at the end. 
+
+From here, once you're logged in, you can see a few categories on the left:
+- post
+- page
+- webcomic
+- cast
+
+let's tackle these one at a time.
+
+#### post
+This is the BLOG only portion of your site, seperate from your comic updates (what you see when you press the blog link). You can go here, hit `new post`, and create a blog post about whatever you want.
+
+#### page
+This is for managing and handling the pages that are built into your site (aside from the blog and webcomic). So basically the things that will appear in the top navigation bar of your website. You can edit these pages, but you do not have the ability to create new ones. I don't recommend deleting pages, as you can hide pages if you don't want them to show.
+
+**Hiding Pages**
+Pages can be hidden, by going clicking on the page, and under `Navigation`, changing the order number to either `0` or a negative number like `-1` (The 'About Us' page is currently hidden, and you can unhide this if you'd like to have an about page). This is also where you can adjust the order that links appear in the navigation based on the number you assign them (where 1 will be first in the navigation, 2 will be second, etc.). If two or more items are set to the same number, it will sort alphabetically between them.
+
+**Home, Archive, and Blog**
+The Home, Archive and Blog pages can be mostly left alone, unless you want to hide them or change the navigation order (explained later). 
+
+**Website and Store**
+Website and Store exist solely to input your portfolio and store link, respectively. You can update the links by clicking on the page, and updating `Link`, under `Navigation` (currently with a default `example.com`). These links can also be hidden.
+
+**Cast**
+Here you would just put the intro text for your cast page, but not the actual cast characters (we will talk about where to do this later). If you want no preamble before showing the list of chracters, simple delete the text in the 1body1 field and hit save. 
+
+**Links**
+A page to list any links I may have forgotten and that you may want to have here ✨
+
+#### cast
+Click `Cast` in the left hand menu, and then `Cast Page`. Don't worry about the preview saying there's an error. The preview function here has it's limitations and unfortunately won't function here. 
+
+The cast page is pretty straight forward. You click `Add Character` to add a new character, and then upload an image, fill out the alt text field (this is what is read by screen readers), the character name and description fields and hit save once you're done adding all your characters. If you don't want this page to show, go back to `Pages` -> `Cast` and set the `Order` to `0` or `-1`.
+
+#### webcomic
+Finally, we're adding some comics! To add a new page, you will `webcomic` in the lefthand menu, and then `New webcomic`. Upload an image, fill out the alt text (alt text helps visually impaired users navigate your site. [Check out this link to learn about creating alt text for comic pages](https://lastcallmedia.com/blog/accessible-comics)), title, and body (the body is text that will show up underneath your page).
+
+### Congrats, you've got a functional webcomic website!
+From now on, for posting, you're mostly just going to access through your admin page on the browser, unless you're looking to do some fancy things like 💅 style your site ✨
+
+(TODO: write about web styling)
+
 ## Some other info:
 
 ## Gotchas

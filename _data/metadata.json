@@ -12,7 +12,7 @@
   },
   "social": {
     "Website": { 
-      "link": "http://example.com/",
+      "link": "",
       "icon": "/static/social-icons/website.svg"
     },
     "Twitter": { 
@@ -20,40 +20,20 @@
       "icon": "/static/social-icons/social-1_round-twitter.svg"
       },
     "Instagram": { 
-      "link": "http://example.com/",
+      "link": "",
       "icon": "/static/social-icons/social-1_round-instagram.svg"
       },
     "Patreon": { 
-      "link": "http://example.com/",
+      "link": "",
       "icon": "/static/social-icons/icons8-patreon.svg"
       },
     "YouTube": { 
-      "link": "http://example.com/",
+      "link": "",
       "icon": "/static/social-icons/social-1_round-youtube.svg"
       },
     "RSS": { 
       "link": "/feed/feed.xml",
       "icon": "/static/social-icons/social-2_round-rss.svg"
-      },
-    "Behance": { 
-      "link": "http://example.com/",
-      "icon": "/static/social-icons/social-1_round-behance.svg"
-      },
-    "Deviantart": { 
-      "link": "http://example.com/",
-      "icon": "/static/social-icons/social-1_round-deviantart.svg"
-      },
-    "Dribbble": { 
-      "link": "http://example.com/",
-      "icon": "/static/social-icons/social-1_round-dribbble.svg"
-      },
-    "Facebook": { 
-      "link": "http://example.com/",
-      "icon": "/static/social-icons/social-1_round-facebook.svg"
-      },
-    "Pinterest": { 
-      "link": "http://example.com/",
-      "icon": "/static/social-icons/social-1_round-pinterest.svg"
       }
   }
 }

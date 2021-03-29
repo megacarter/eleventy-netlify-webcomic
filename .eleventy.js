@@ -106,6 +106,7 @@ module.exports = function(eleventyConfig) {
   const Image = require("@11ty/eleventy-img");
 
   async function imageShortcode(src, alt) {
+    console.log('BUILDING THUMBNAILS');
     if(alt === undefined) {
       // You bet we throw an error on missing alt (alt="" works okay)
       throw new Error(`Missing \`alt\` on myImage from: ${src}`);

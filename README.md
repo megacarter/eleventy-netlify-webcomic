@@ -48,6 +48,8 @@ list, and you should then be logged into your CMS. Cool huh?
 
 Now you're all set, and you can start editing content!
 
+## Some other info:
+
 ## Gotchas
 
 If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,

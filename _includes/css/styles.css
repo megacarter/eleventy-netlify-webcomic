@@ -221,6 +221,11 @@ a[rel="tag"]:last-child {
   padding-left: 30px;
   padding-top: 20px; }
 
+.comic__image {
+  background: white; }
+  .comic__image img {
+    margin: 0 auto; }
+
 .comic__write-up {
   background: white;
   padding: 1.5em;

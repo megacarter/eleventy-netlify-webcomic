@@ -21,10 +21,10 @@ $space-xxl: 60px;
 
 @mixin graph-background {
     //you can copy and paste different patterns from here https://www.magicpattern.design/tools/css-backgrounds/
-    background-color: #e5e5f7;
-    opacity: 0.4;
-    background-image:  linear-gradient(#444cf7 2px, transparent 2px), linear-gradient(to right, #444cf7 2px, #e5e5f7 2px);
-    background-size: 40px 40px;
+   background-color: #000000;
+opacity: 1;
+background-image: radial-gradient(#ffffff 1.1500000000000001px, #000000 1.1500000000000001px);
+background-size: 23px 23px;
 }
 
 

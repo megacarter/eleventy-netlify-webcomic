@@ -3,6 +3,5 @@
   "permalink": "/comic/{{ title | slug }}/index.html",
   "tags": [
     "comic"
-  ],
-  "comicPageUrl": "/static/img/comic/pm-3.png"
+  ]
 }

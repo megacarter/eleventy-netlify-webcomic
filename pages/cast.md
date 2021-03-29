@@ -11,6 +11,11 @@ characters:
   - characterImage: /static/img/logo.png
     characterName: Sheila
     characterDescription: Sheila is whatever she wants to be
+  - characterImage:
+      alt: Beep boop
+      url: /static/img/the-boat.png
+    characterName: the boat
+    characterDescription: it's a very important boat
 ---
 ##### Intro on a cast page
 

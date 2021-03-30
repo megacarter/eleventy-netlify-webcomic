@@ -23,7 +23,7 @@ $space-xxl: 60px;
     //you can copy and paste different patterns from here https://www.magicpattern.design/tools/css-backgrounds/
    background-color: #000000;
 opacity: 1;
-background-image: radial-gradient(#ffffff 1.1500000000000001px, #000000 1.1500000000000001px);
+background-image: radial-gradient(rgba(255,255,255,0.3) 1.1500000000000001px, #000000 1.1500000000000001px);
 background-size: 23px 23px;
 }
 
@@ -45,7 +45,7 @@ $link: white;
 $link-hover: white;
 
 // the colour you want the social icons to be
-$social-icon-color: blue;
+$social-icon-color: white;
 
 /* TAG COLOURS */
 // the colour of the TEXT of the tag (currently white)

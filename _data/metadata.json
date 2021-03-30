@@ -12,19 +12,19 @@
   },
   "social": {
     "Website": { 
-      "link": "www.megacarter.com",
+      "link": "http://www.megacarter.com",
       "icon": "/static/social-icons/website.svg"
     },
     "Twitter": { 
-      "link": "www.twitter.com/mega_carter",
+      "link": "http://www.twitter.com/mega_carter",
       "icon": "/static/social-icons/social-1_round-twitter.svg"
       },
     "Instagram": { 
-      "link": "www.instagram.com/megacarter",
+      "link": "http://www.instagram.com/megacarter",
       "icon": "/static/social-icons/social-1_round-instagram.svg"
       },
     "Patreon": { 
-      "link": "www.patreon.com/megacarter",
+      "link": "http://www.patreon.com/megacarter",
       "icon": "/static/social-icons/icons8-patreon.svg"
       },
     "YouTube": { 

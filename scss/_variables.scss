@@ -19,6 +19,10 @@ $space-xxl: 60px;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
+body {
+    color: #fff;
+}
+
 @mixin graph-background {
     //you can copy and paste different patterns from here https://www.magicpattern.design/tools/css-backgrounds/
    background-color: #000000;

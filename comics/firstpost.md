@@ -1,5 +1,5 @@
 ---
-comicPageUrl: /static/img/exorcism1.jpg
+comicPageUrl: /static/img/exorcism-mini-01.png
 comicalt: A forest! how spooky
 title: "01"
 summary: Why contemplating our mortality can be a powerful catalyst for change
